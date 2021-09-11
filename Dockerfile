@@ -8,4 +8,4 @@ RUN unzip veggie.zip
 RUN cp -rvf markups-veggie/* .
 RUN rm -rf __MACOSX markups-veggie veggie.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPPOSE 80
+EXPOSE 80
